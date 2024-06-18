@@ -3,6 +3,17 @@ $(window).load(function() {
     return false;
 });
 
+function copyEmail() {
+            const emailText = document.getElementById('email').textContent;
+            const textArea = document.createElement('textarea');
+            textArea.value = emailText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Correo copiado al portapapeles: ' + emailText);
+        }
+
 $(document).ready(function() {
     $('#header_wrapper').scrollToFixed();
     $('.res-nav_click').click(function() {
@@ -70,6 +81,25 @@ $(document).ready(function() {
         setProjects();
         return false;
     });
+    
+    function copyEmail() {
+    var emailElement = document.getElementById("email");
+    var emailText = emailElement.textContent;
+
+    
+    var tempInput = document.createElement("input");
+    tempInput.value = emailText;
+    document.body.appendChild(tempInput);
+
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); 
+
+    document.execCommand("copy");
+    
+    document.body.removeChild(tempInput);
+
+    alert("Correo electrónico copiado: " + emailText);
+}
 
     function splitColumns() {
         var winWidth = $(window).width(),

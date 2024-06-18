@@ -1952,6 +1952,16 @@ display: inline-block;
 .social_links li {
 float: left; 
 }
+
+.copy-icon {
+    width: 10px; /* Ajusta el tamaño del icono */
+    height: 10px; /* Ajusta el tamaño del icono */
+    cursor: pointer;
+    vertical-align: middle; /* Alinea la imagen con el texto */
+    margin-left: 5px; /* Espacio entre el texto y el icono */
+    display: inline; /* Asegura que esté en línea con el texto */
+}
+
 .contact_section{
 margin:0;
 }
