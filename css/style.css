@@ -1,7 +1,12 @@
 
-@charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
+@font-face {
+    font-family: '8 bit arcade';
+    src: url('/fonts/8bit_arcade/8-bitArcadeOut.ttf') format('truetype');,
+         url('/fonts/8bit_arcade/8-bitArcadeIn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 ul {
     list-style: none;
@@ -29,7 +34,7 @@ a, a:hover, a:active {
 }
 .clearfix:before,
 .clearfix:after {
-    content: '\0020';
+    content: '0020';
     display: block;
     overflow: hidden;
     visibility: hidden;
@@ -206,7 +211,7 @@ h2 {
     font-weight: normal;
     margin: 0px 0 25px 0;
     text-align: center;
-    text-transform: uppercase;
+    
 }
 
 h3 {
@@ -222,7 +227,7 @@ h6 {
     color: #888888;
     font-family: '8 bit arcade', 8-bit Arcade In ;
     font-weight: 400;
-    text-align: center;
+    text-align: justify;
     margin: 0 0 60px 0;
 }
 
@@ -345,7 +350,7 @@ p {
 }
 
 .borderTop {
-    margin-top: 30px;
+    margin-top: 20px;
     border-top: 1px solid #DADADA;
 }
 
@@ -396,7 +401,7 @@ p {
     font-size: 40px;
     color: #FFF;
     margin: 0 0 26px 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
     text-align: center;
     line-height: 70px;
 }
@@ -421,7 +426,7 @@ letter-spacing: 1px;
 }
 
 a.read_more, a.read_more2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
     display: block;
     font-size: 16px;
     width: 178px;
@@ -519,7 +524,7 @@ text-align: center;
 }
 
 .service_block h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
     font-weight: 600;
     font-size: 25px;
     color: #fff;
@@ -608,7 +613,7 @@ a.contact_btn {
     font-size: 16px;
     color: #ED5441;
     border-radius: 3px;
-    font-family: 'Raleway', sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
     font-weight: 600;
     border: 2px solid #ED5441;
     transition: all 0.2s ease-in-out;
@@ -809,7 +814,7 @@ img {
 }
 
 .page_section.team h6 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* About Us
@@ -820,6 +825,10 @@ background-repeat: no-repeat;
 background-position: right;
 background-size: auto 100%;
 background-position-y: 70px;
+display: flex;
+justify-content: center; 
+align-items: center; 
+text-align: center; 
 }
 #about-us .read-more{
 	border: 1px solid #ED5441;
@@ -835,9 +844,11 @@ background-position-y: 70px;
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: auto 100%;
+	display: flex;
+  justify-content: center;
 }
 .about-us{
-	margin-top: 70px;
+	margin-top: 5px;
 	margin-bottom: 50px;
 }
 .about-us h3{
@@ -1005,6 +1016,11 @@ margin-bottom: 5px;
 }
  .img-circle {
 border-radius: 50%;
+display: block;
+margin: 0 auto 15px; /* Centrar la imagen horizontalmente y agregar margen inferior */
+height: 120px;
+width: 120px;
+object-fit: cover;
 }
 .centered {
 text-align: center;
@@ -1043,7 +1059,7 @@ border: 1px solid #1e1d20;
     font-size: 40px;
     color: #ffffff;
     margin: 0 0 50px 0;
-    text-transform: uppercase;
+    
 }
 
 .contact_block {
@@ -1131,7 +1147,7 @@ border: 1px solid #1e1d20;
     display: block;
     font-size: 16px;
     color: #ffffff;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 
 .social_links {
@@ -1382,18 +1398,18 @@ border: 1px solid #1e1d20;
 
 .section-title h2 {
     color: #222222;
-    font-family: 'Raleway', sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
     font-size: 34px;
     letter-spacing: -1px;
     margin: 0 0 15px;
     text-align: center;
-    text-transform: uppercase;
+    
 }
 
 .section-title span {
     display: block;
     color: #888888;
-    font-family: 'Open Sans',sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
     font-size: 16px;
     font-weight: 400;
     margin: 0 0 60px;
@@ -1599,6 +1615,8 @@ border: 1px solid #1e1d20;
 #project_container {
     display: none;
     background-color: #FFF;
+    display: flex;
+  justify-content: center;
 }
 
 #project-page-button-fullscreen {
@@ -1654,7 +1672,7 @@ border: 1px solid #1e1d20;
 .project-section-title h1 {
     margin-bottom: 5px!important;
     letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
+    font-family: '8 bit arcade', 8-bit Arcade In;
 }
 
 .project-page {
@@ -1883,6 +1901,8 @@ background-repeat: no-repeat;
 background-position: right;
 background-size: auto 59%;
 background-position-y: 150px;
+display: flex;
+justify-content: center;
 }
 }
 @media (max-width: 768px) {
@@ -1893,6 +1913,8 @@ text-align: center;
 }
 .aboutUs-container{
 	background-image:none;
+	display: flex;
+  justify-content: center;
 }
 p{
 font-size:14px;
@@ -1914,6 +1936,7 @@ line-height: 39px;
 margin: 0 0 9px 0;
 }
 .inner_section {
+display: flex;
 padding: 20px 0 20px;
 }
 #aboutUs img{
@@ -1939,6 +1962,7 @@ margin: 0 18px;
 }
 .page_section.team{
 padding: 40px 0;
+
 }
 , #clients {
 padding: 40px 0;
@@ -1953,20 +1977,12 @@ display: inline-block;
 float: left; 
 }
 
-.copy-icon {
-    width: 10px; /* Ajusta el tamaño del icono */
-    height: 10px; /* Ajusta el tamaño del icono */
-    cursor: pointer;
-    vertical-align: middle; /* Alinea la imagen con el texto */
-    margin-left: 5px; /* Espacio entre el texto y el icono */
-    display: inline; /* Asegura que esté en línea con el texto */
-}
 
 .contact_section{
 margin:0;
 }
 h2, .contact_section h2 {
-font-size: 30px;
+font-size: 40px;
 }
 .page_section.contact {
 padding: 60px 0 50px;
@@ -2029,13 +2045,29 @@ display:none;
 }
 }
 .rt-box {
-float: left;
-width: 70%;
-text-align: left;
-margin-left: 10px;
+display:flex;
+flex-direction: column;
+align-items: center;
+width: 90%;
+padding: 20px;
+text-align: justify;
+margin-left: 10px auto;
+
 }
+
+
 img.img.img-circle.lt-box {
+display:flex;
 float: left;
 width: 60px;
 height: auto;
+
+}
+
+.col-md-3.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
