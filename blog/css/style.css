@@ -66,6 +66,14 @@ header .navbar {
     border: none;
 }
 
+
+.gif {
+    width: 75px;
+    height: 75px;
+    display:flex;
+    
+}
+
 .navbar-brand {
     color: #222;
 	text-transform: uppercase;
@@ -73,11 +81,12 @@ header .navbar {
     font-weight: 700;
     line-height: 1em;
 	letter-spacing: -1px;
-    margin-top: 20px;
-    padding: 0 0 0 15px;
+    margin-top: -10px;
+    padding: 1px 1px 1px 1px;
+    
 }
 .navbar-default .navbar-brand{
-color: #2FADDE;
+    color: #62070E;
 }
 
 header .navbar-collapse  ul.navbar-nav {

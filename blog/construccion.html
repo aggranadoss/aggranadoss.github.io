@@ -20,12 +20,39 @@
             text-align: center;
             font-size: 2em;
             color: #333;
+	    
         }
+
+	.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh; 
+            background-color: #f0f0f0; 
+        }
+
+	.container img {
+            max-width: 50%;
+            height: auto;
+	}
+	
+	.gif {
+	    display: flex;
+	    width: 50%;
+	    height: auto;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
     </style>
 </head>
 <body>
-    <div class="message">
-        🚧 En Construcción 🚧
-    </div>
+  
+  <div class="message">
+      🚧 En Construcción 🚧
+      <div class="container">
+      <img src="img/piston.gif" alt="Gif en Construccion" >
+      </div>
+  </div>
 </body>
 </html>
