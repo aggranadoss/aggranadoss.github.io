@@ -257,7 +257,7 @@ p {
     margin-top: 8px;
 	  position: relative;
 	  z-index: 2;
-	  max-width: 70px;
+	  max-width: 120px;
     height: auto;
 
 }
@@ -450,7 +450,7 @@ a.read_more{
 }
 a.read_more2:hover, a.read_more:hover {
     background: #fff;
-    color: #0593F9;
+    color: #fb8a18;
     border: 1px solid #fff;
 }
 a.read_more:hover {
@@ -1078,7 +1078,7 @@ border: 1px solid #1e1d20;
 }
 
 .contact_block_icon.icon3 {
-    border-color: #49b5e7;
+    border-color: #fb8a18 ;
 }
 
 .contact_block_icon span {
@@ -1099,11 +1099,11 @@ border: 1px solid #1e1d20;
 }
 
 .contact_block_icon.icon3 {
-    border-color: #49b5e7;
+    border-color: #fb8a18;
 }
 
 .contact_block_icon.icon3 span {
-    background: #49b5e7;
+    background: #fb8a18;
 }
 
 .contact_block_icon i {
