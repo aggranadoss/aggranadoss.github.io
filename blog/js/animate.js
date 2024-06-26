@@ -488,33 +488,61 @@ jQuery(document).ready(function($) {
 
 });
 
-// Función clearDefault
-function clearDefault(el) {
-    if (el.value === el.defaultValue) {
-        el.value = "";
-    }
-    el.style.color = "#333";
-}
-
-// Función restoreDefault
-function restoreDefault(el) {
-    if (el.value === "") {
-        el.value = el.defaultValue;
-        el.style.color = "#aaa";
+// Función para limpiar el valor por defecto
+function clearDefault(element) {
+    if (element.value === element.defaultValue) {
+        element.value = '';
     }
 }
 
+// Función para restaurar el valor por defecto
+function restoreDefault(element) {
+    if (element.value === '') {
+        element.value = element.defaultValue;
+    }
+}
+
+// Función para manejar el envío del formulario con fetch
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío real del formulario
+    fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Formulario enviado correctamente');
+            resetForm(); // Restablecer los campos del formulario
+        } else {
+            alert('Hubo un problema con el envío del formulario');
+        }
+    }).catch(error => {
+        alert('Hubo un problema con el envío del formulario');
+    });
+});
+
+// Función para restablecer los campos del formulario
 function resetForm() {
     var elements = document.querySelectorAll('.input-text, .text-area');
     elements.forEach(function(el) {
         el.value = el.defaultValue;
-        el.style.color = "#aaa";
+        el.style.color = '#aaa';
     });
 }
 
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevenir el envío real del formulario
-    alert("El formulario ha sido enviado con éxito.");
-    resetForm();
+// Agregar eventos a los campos de texto para limpiar y restaurar valores por defecto
+document.querySelectorAll('.input-text').forEach(input => {
+    input.addEventListener('focus', function() {
+        clearDefault(this);
+    });
+    input.addEventListener('blur', function() {
+        restoreDefault(this);
+    });
+    input.addEventListener('keyup', function(event) {
+        if (event.key === 'Escape') {
+            restoreDefault(this);
+        }
+    });
 });
