@@ -484,6 +484,37 @@ jQuery(document).ready(function($) {
 		}
 	);
 
+    
+
+});
+
+// Función clearDefault
+function clearDefault(el) {
+    if (el.value === el.defaultValue) {
+        el.value = "";
+    }
+    el.style.color = "#333";
+}
+
+// Función restoreDefault
+function restoreDefault(el) {
+    if (el.value === "") {
+        el.value = el.defaultValue;
+        el.style.color = "#aaa";
+    }
+}
+
+function resetForm() {
+    var elements = document.querySelectorAll('.input-text, .text-area');
+    elements.forEach(function(el) {
+        el.value = el.defaultValue;
+        el.style.color = "#aaa";
+    });
+}
 
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir el envío real del formulario
+    alert("El formulario ha sido enviado con éxito.");
+    resetForm();
 });
