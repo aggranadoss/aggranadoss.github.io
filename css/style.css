@@ -162,7 +162,7 @@ figure.effect-oscar h2 {
 	color:#A3A3A3;
 }
 
-figure.effect-oscar figcaption::before,
+
 figure.effect-oscar p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
