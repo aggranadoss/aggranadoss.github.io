@@ -12,7 +12,7 @@ Hoja de vida realizada por Templates
 
 - License :
 -------
-**Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
+**Creative Commons Attribution 4.0** - https://creativecommons.org/licenses/by/4.0/deed.en
 
 ## Imagenes e Iconos
 Fue modificada con imágenes libres de derecho de autor tomadas
