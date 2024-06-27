@@ -27,9 +27,35 @@ h1,h2, h3, h4, h5, h6 {
 }
  
 .container {
-	padding:0 20px 0 20px;
-	position:relative;
+    padding: 0 20px;
+    position: relative;
 }
+
+.container > * {
+    margin-bottom: 20px; /* Añadir espacio entre los elementos hijos */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Ajustar el padding para pantallas más pequeñas */
+    }
+
+    .container > * {
+        margin-bottom: 10px; /* Ajustar el margin para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px; /* Ajustar el padding para pantallas aún más pequeñas */
+    }
+
+    .container > * {
+        margin-bottom: 5px; /* Ajustar el margin para pantallas aún más pequeñas */
+    }
+}
+
+
 
 #wrapper{
 	width:100%;
@@ -1776,5 +1802,4 @@ padding-top: 12px;
     color: #222;
     border: 1px solid #fb8a18;
 }
-
 

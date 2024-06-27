@@ -504,7 +504,7 @@ function restoreDefault(element) {
 
 // Función para manejar el envío del formulario con fetch
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevenir el envío real del formulario
+    event.preventDefault(); 
     fetch(this.action, {
         method: this.method,
         body: new FormData(this),
