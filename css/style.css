@@ -638,6 +638,33 @@ a.contact_btn:hover {
 /* Portfolio
 ---------------------------------*/
 
+.row-centered {
+    padding: 0 5%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    text-align: center; 
+}
+
+.row-centered .col-md-3 {
+    flex: 0 0 calc(35% - 20px); 
+    margin: 10px; 
+    margin-top: 2%;
+    text-align: center; 
+}
+
+.row-centered .col-md-3 a img {
+    display: flex; 
+    width: 100%; 
+    height: auto; 
+    
+}
+
+
+
 .portfolio-container {
   display: grid;
   grid-template-columns: 4;
@@ -649,7 +676,7 @@ a.contact_btn:hover {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  /* Add your styles for the portfolio item */
+  
 }
 
 .portfolio_img img {
