@@ -27,8 +27,9 @@ h1,h2, h3, h4, h5, h6 {
 }
  
 .container {
-    padding: 0 20px;
+    padding: 0 5%;
     position: relative;
+    
 }
 
 .container > * {
@@ -511,7 +512,8 @@ section.callaction {
 #content {
 	position:relative;
 	background:#fff;
-	padding:50px 0 0px 0;
+	padding:50px 0 0 0;
+	margin-top: -7%;
 }
 
 #content img {
@@ -639,6 +641,8 @@ ul.breadcrumb li a:hover {
 .content_white {
 text-align: justify;
 padding: 0.5em 2em;
+max-width: 1300px;
+margin: 0 auto;
 }
 
 .featured_content {
@@ -1790,8 +1794,11 @@ padding-top: 12px;
  .form {
     margin: 0 auto; 
     width: 40%; 
-    /*max-width: 600px;  Ancho máximo del contenedor del formulario */
+    max-width: 600px;  
     height: auto;
+    margin-top: -2%;
+    
+    
 }
 
 .input-text {
