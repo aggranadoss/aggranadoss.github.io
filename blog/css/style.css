@@ -334,6 +334,7 @@ display: inline-block;
 .float-right-img {
     float: right;
     margin-right: 90px;
+    
 }
 
 #featured .flexslider:after {
@@ -361,14 +362,52 @@ right:0px;
     margin: 0;
     padding: 25px 35px 5px 35px;
     position: absolute;
-    left: 5%; right:0px; }
+    left: 10%; right:10%; }
 
-.flex-caption h3 {color: #FFFFFF; letter-spacing: 1px; margin-bottom: 8px; font-size: 36px;}
+.flex-caption h3 {color: #FFFFFF; letter-spacing: 1px; margin-bottom: 8px; font-size: 46px; margin: 0 0 1% -10%; display: flex;  }
 
-.flex-caption p {margin: 0 0 15% 0;}
+.flex-caption p {margin: 0 0 17% -10%; display: flex;}
 
 .skill-home{
 margin-bottom:50px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .flex-caption {
+        padding: 20px 30px 5px 30px;
+        bottom: 20px;
+    }
+    .float-right-img {
+        margin-right: 20px;
+        width: 100%;
+    }
+    .flex-caption h3 {
+        font-size: 28px;
+    }
+    .flex-caption p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-caption {
+        padding: 15px 20px 5px 20px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    .float-right-img {
+        margin-right: 10px;
+        width: 100%;
+	height: auto;
+    }
+    .flex-caption h3 {
+        font-size: 24px;
+    }
+    .flex-caption p {
+        font-size: 12px;
+    }
 }
 
 .c1{
@@ -599,12 +638,9 @@ ul.breadcrumb li a:hover {
 ============================ */
 .content_white {
 text-align: justify;
-padding: 3em 2.5em;
+padding: 0.5em 2em;
 }
-.content_white {
-text-align: justify;
-padding: 3em 2.5em;
-}
+
 .featured_content {
 background: #ffffff;
 width:100%;
@@ -1402,6 +1438,7 @@ ul.social-network li {
 .copyright {
 	text-align:left;
 	font-size:12px;
+	display:flex;
 }
 
 #sub-footer ul.social-network {
@@ -1652,7 +1689,7 @@ padding-top: 12px;
 	}
 
 	#featured .flexslider .slide-caption {
-		width: 90%; 
+		width: 100%; 
 		padding: 2%; 
 		position: absolute; 
 		left: 0; 
@@ -1723,7 +1760,7 @@ padding-top: 12px;
 	}
 
 	.flexslider .flex-caption {
-		display:none;
+		display:block inline;
 	}
 
 
