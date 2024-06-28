@@ -76,7 +76,7 @@
 	    <li><a class="" href="#" data-filter=".an">
 		<h5>Lenguaje de Alto Nivel</h5>
 	    </a></li>
-	    <li><a class="" href="#" data-filter=".ad">
+	    <li><a id="datos" class="" href="#" data-filter=".ad">
 		<h5>Análisis de Datos</h5>
 	    </a></li>
 	    <li><a class="" href="#" data-filter=".db">
@@ -333,6 +333,17 @@
 </script>
 
 
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+      if(window.location.hash === "#datos") {
+          var filterLink = document.querySelector('a[data-filter=".ad"]');
+          if (filterLink) {
+              filterLink.click();
+          }
+      }
+  });
+</script>
 
 </body>
 </html>
