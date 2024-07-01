@@ -25,9 +25,9 @@ a:active {
 h1,h2, h3, h4, h5, h6 {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:700;
-	line-height:1.1em;
+	line-height:2.5vw;
 	color:#333;
-	margin-bottom: 20px;
+	margin-bottom: 5vw;
 }
  
 .container {
@@ -395,10 +395,10 @@ margin-bottom:50px;
         width: 100%;
     }
     .flex-caption h3 {
-        font-size: 28px;
+        font-size: 28vw;
     }
     .flex-caption p {
-        font-size: 14px;
+        font-size: 14vw;
     }
 }
 
@@ -675,7 +675,8 @@ font-size: 1.1em;
 color: #555;
 text-decoration: none;
 }
-.featured_content p {
+.featured_content p
+{
 color: #666;
 font-size: 0.95em;
 line-height: 1.5em;
@@ -807,7 +808,7 @@ form#commentform textarea {
 
 .work-nav #filters li a {
 	color: #7F8289;
-	font-size: 16px;
+	font-size: 16vw;
 	display: block;	
 }
 
