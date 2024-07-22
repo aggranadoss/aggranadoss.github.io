@@ -2097,3 +2097,18 @@ figure.effect-oscar:hover img {
         opacity: 0.1;
 }
 
+#latex-content {
+    text-align: center;
+    margin: 20px 0;
+}
+.latex-block {
+    display: inline-block;
+    text-align: left;
+}
+
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+		    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+};
